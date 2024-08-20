@@ -138,6 +138,6 @@ div.channelAppLauncher_df39bd {
     display: none;
 }
 
-[area-label="Nitro"] {
+[aria-label="Nitro"] {
     display: none;
 }

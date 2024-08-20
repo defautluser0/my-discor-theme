@@ -1,0 +1,128 @@
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+div[aria-label="Inbox"] {
+    display: none;
+}
+
+div[aria-label="Help"] {
+    display: none;
+}
+
+div[aria-label="Show User Profile"] {
+    display: none;
+}
+
+div[aria-label="Start Video Call"] {
+    display: none;
+}
+
+div[aria-label="Hide Member List"] {
+    display: none;
+}
+
+#channel-attach-listen {
+    display: none;
+}
+
+#user-context-note {
+    display: none;
+}
+
+#user-context-close-dm {
+    display: none;
+}
+
+#user-context-user-profile {
+    display: none;
+}
+
+#user-context-invite-to-server {
+    display: none;
+}
+
+#user-context-apps {
+    display: none;
+}
+
+#user-context-mark-channel-read[aria-disabled="true"] {
+    display: none;
+}
+
+div[role="separator"].separator_d90b3d {
+    display: none;
+}
+
+div[aria-label="Modify Attachment"] {
+    display: none;
+}
+
+div.filenameContainer_f847a3 {
+    display: none;
+}
+
+li.upload_df1eaf {
+    min-height: auto;
+    max-height: auto;
+    min-width: auto;
+    max-width: auto;
+}
+
+div[area-hidden="true"] {
+    display: none;
+}
+
+h2.privateChannelsHeaderContainer_c47fa9 {
+    display: none;
+}
+
+div.linkButton_c91bad {
+    display: none;
+}
+
+div.basicChannelRowLink_d8bfb3 {
+    display: none;
+}
+
+div.sectionDivider_c43953 {
+    display: none;
+}
+
+div[style="height: 12px;"] {
+    display: none;
+}
+
+.containerDefault_a08117 {
+    padding-top: 0px;
+}
+
+.link_d8bfb3 {
+    padding: 3px;
+    padding-left: 6px;
+}
+
+.group-spacing-16 .groupStart_d5deea {
+    margin-top: auto;
+}
+
+.cozyMessage_d5deea.groupStart_d5deea {
+    min-height: auto;
+}
+
+.group-spacing-16 .divider_d5deea.beforeGroup_d5deea {
+    top: 0;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.membersGroup_cbd271 {
+    padding: 0px;
+    padding-top: 8px;
+    padding-left: 5px;
+    height: auto;
+}
+
+div[data-list-item-id="channels___boosts-704790150806372436"] {
+    display: none;
+}

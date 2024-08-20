@@ -1,3 +1,10 @@
+/**
+ * @name my vencor theme
+ * @author defautluser0
+ * @description minimal theme or smth idk
+ * @version 1.0
+ */
+
 button[aria-label="Send a gift"] {
     display: none;
 }

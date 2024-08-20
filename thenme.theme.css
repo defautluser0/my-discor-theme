@@ -137,3 +137,7 @@ div[style="height: 12px;"] {
 div.channelAppLauncher_df39bd {
     display: none;
 }
+
+[area-label="Nitro"] {
+    display: none;
+}

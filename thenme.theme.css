@@ -1,5 +1,5 @@
 /**
- * @name my vencor theme
+ * @name my discor theme
  * @author defautluser0
  * @description minimal theme or smth idk
  * @version 1.0
@@ -131,5 +131,9 @@ div[style="height: 12px;"] {
 }
 
 .container_c75f85.containerWithMargin_c75f85 {
+    display: none;
+}
+
+div.channelAppLauncher_df39bd {
     display: none;
 }

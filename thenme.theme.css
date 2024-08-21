@@ -5,70 +5,59 @@
  * @version 1.0
  */
 
+/* hide useless shit */
 button[aria-label="Send a gift"] {
     display: none;
 }
-
 div[aria-label="Inbox"] {
     display: none;
 }
-
 div[aria-label="Help"] {
     display: none;
 }
-
 div[aria-label="Show User Profile"] {
     display: none;
 }
-
 div[aria-label="Start Video Call"] {
     display: none;
 }
-
 div[aria-label="Hide Member List"] {
     display: none;
 }
 
+/* hide useless shit in the context menu */
 #channel-attach-listen {
     display: none;
 }
-
 #user-context-note {
     display: none;
 }
-
 #user-context-close-dm {
     display: none;
 }
-
 #user-context-user-profile {
     display: none;
 }
-
 #user-context-invite-to-server {
     display: none;
 }
-
 #user-context-apps {
     display: none;
 }
-
 #user-context-mark-channel-read[aria-disabled="true"] {
     display: none;
 }
-
-div[role="separator"].separator_d90b3d {
+div.separator_d90b3d {
     display: none;
 }
 
+/* hide useless shit in the attachments popup and make it more compact */
 div[aria-label="Modify Attachment"] {
     display: none;
 }
-
 div.filenameContainer_f847a3 {
     display: none;
 }
-
 li.upload_df1eaf {
     min-height: auto;
     max-height: auto;
@@ -76,10 +65,7 @@ li.upload_df1eaf {
     max-width: auto;
 }
 
-div[area-hidden="true"] {
-    display: none;
-}
-
+/* ill continue commenting this on pc cuz i forgot what these do */
 h2.privateChannelsHeaderContainer_c47fa9 {
     display: none;
 }
@@ -96,10 +82,12 @@ div.sectionDivider_c43953 {
     display: none;
 }
 
+/* hide the 12px padding between channels */
 div[style="height: 12px;"] {
     display: none;
 }
 
+/* i also forgot what these do */
 .containerDefault_a08117 {
     padding-top: 0px;
 }
@@ -134,10 +122,12 @@ div[style="height: 12px;"] {
     display: none;
 }
 
+/* hide the apps button on the chatbox */
 div.channelAppLauncher_df39bd {
     display: none;
 }
 
+/* hide nitro tab on settings */
 [aria-label="Nitro"] {
     display: none;
 }

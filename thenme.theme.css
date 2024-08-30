@@ -149,3 +149,8 @@ div.channelAppLauncher_df39bd {
 .headerContainer_bc6acb {
     display: none;
 }
+
+/* no NEW tab on NEW channels */
+.channelInfo_f6f816 {
+    display: none;
+}

@@ -150,7 +150,7 @@ div.channelAppLauncher_df39bd {
     display: none;
 }
 
-/* no NEW tab on NEW channels */
-.channelInfo_f6f816 {
+/* Remove Edit Image with Apps button from images (stole from aliucord server) */
+div[class="hoverButtonGroup_d0395d"] {
     display: none;
 }

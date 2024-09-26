@@ -85,7 +85,7 @@ div.sectionDivider_c43953 {
     display: none;
 }
 
-/* hide the 12px padding between channels */
+/* remove the 12px padding between channels */
 div[style="height: 12px;"] {
     display: none;
 }
@@ -125,9 +125,12 @@ div[style="height: 12px;"] {
     height: auto;
 }
 
-/* hide the apps button on the chatbox */
+/* hide the apps button on the chatbox & fix the padding on the jump to present part */
 div.channelAppLauncher_df39bd {
     display: none;
+}
+.jumpToPresentBar_cf58b5 {
+    right: 16px;
 }
 
 /* hide the boosts thing */

@@ -163,6 +163,6 @@ div[class="hoverButtonGroup_d0395d"] {
     display: none;
 }
 /* remove the fucking separator between sections in the guilds scroll thing */
-div.scroller > div.guildSeparator_d0c57e {
+div.listItem_c96c45:has(div.guildSeparator_d0c57e) {
     display: none;
 }

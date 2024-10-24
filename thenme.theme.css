@@ -166,3 +166,12 @@ div[class="hoverButtonGroup_d0395d"] {
 div.listItem_c96c45:has(div.guildSeparator_d0c57e) {
     display: none;
 }
+/* fix the scroll problem in the channels thing */
+ul[aria-label=Channels] {
+    height: auto;
+}
+
+/* no hallow een for you :3 */
+.wrapper_c1da7a {
+    display: none;
+}

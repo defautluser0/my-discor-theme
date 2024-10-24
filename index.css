@@ -1,0 +1,51 @@
+body {
+  background-color:  #2B2B2B;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  color: #2B2B4B;
+}
+
+.hiddener {
+  color: #2B2B2B;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.p {
+  font-size: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.img {
+  border-radius: 2%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .h1 {
+    font-size: 30px;
+		padding: 0px;
+  }
+
+  .p {
+    font-size: 20px;
+		padding: 0px;
+  }
+}

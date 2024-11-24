@@ -183,3 +183,8 @@ div.listItem_c96c45:has(div.guildSeparator_d0c57e) {
 .wrapper_c1da7a {
     display: none;
 }
+
+/* hide NEW thing on cahnnels */
+.newChannel_ecb303 {
+    display: none;
+}

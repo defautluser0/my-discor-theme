@@ -176,10 +176,9 @@ div.hoverButtonGroup__06ab4 {
 div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
-/* fix the scroll problem in the channels thing
-CURRENTLY BROKEN UNTIL DISCORD UNHARDCODES THE HEIGHT (i cant override style tag)*/
+/* fix the scroll problem in the channels thing */
 [aria-label=Channels] {
-    height: auto;
+    height: auto !important;
 }
 
 /* no hallow een for you :3 */

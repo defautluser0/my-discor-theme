@@ -176,11 +176,11 @@ div.hoverButtonGroup__06ab4 {
 div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
-/* fix the scroll problem in the channels thing */
-[aria-label=Channels] {
+/* fix the scroll problem in the channels thing TODO:fix */
+/*[aria-label=Channels] {
     height: auto !important;
 }
-
+*/
 /* no hallow een for you :3 */
 .wrapper_c1da7a {
     display: none;

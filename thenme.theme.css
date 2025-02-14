@@ -75,11 +75,6 @@ li.upload_df1eaf {
     max-width: auto;
 }
 
-/* hide the direct messages thing */
-h2.privateChannelsHeaderContainer__99e7c {
-    display: none;
-}
-
 /* hide nitro and shop but keep friends cuz its actually kinda useful */
 li.channel__972a0:not(.dm__972a0) {
     display: none;

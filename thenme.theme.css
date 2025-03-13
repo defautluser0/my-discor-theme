@@ -185,3 +185,8 @@ div.listItem__650eb div.guildSeparator__252b6 {
 .container__675e5 {
     display: none;
 }
+
+/* no download thing */
+.scroller_ef3116 > .listItem__650eb {
+    display: none;
+}

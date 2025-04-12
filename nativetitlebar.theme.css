@@ -9,7 +9,7 @@ div.bar_c38106 {
 .visual-refresh {
     --custom-app-top-bar-height: 0px;
 }
-/* add padding to the app itself for it to look good with the native titlebar */
-.app__160d8 {
-    top: 5px !important;
+/* add padding to the server buttons scroller thing */
+.tree_ef3116 .itemsContainer_ef3116 {
+    padding-top: 5px !important;
 }

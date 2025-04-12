@@ -20,19 +20,22 @@ button[aria-label="Open sticker picker"] {
 
 /* goodbye useless buttons on the top row */
 div[aria-label="Inbox"] {
-    display: none;
+    display: none !important;
 }
 div[aria-label="Help"] {
-    display: none;
+    display: none !important;
+}
+div.winButttons_c38106.winButtonsWithDivider_c38106::before {
+    content: none !important;
 }
 div[aria-label="Show User Profile"] {
-    display: none;
+    display: none !important;
 }
 div[aria-label="Start Video Call"] {
-    display: none;
+    display: none !important;
 }
 div[aria-label="Hide Member List"] {
-    display: none;
+    display: none !important;
 }
 
 /* hide useless shit in the context menu */
@@ -45,16 +48,16 @@ div[aria-label="Hide Member List"] {
 #user-context-close-dm {
     display: none;
 }
-#user-context-user-profile {
-    display: none;
-}
 #user-context-invite-to-server {
     display: none;
 }
-#user-context-apps {
+#message-apps {
     display: none;
 }
 #user-context-mark-channel-read[aria-disabled="true"] {
+    display: none;
+}
+#message-mark-unread {
     display: none;
 }
 div.separator_c1e9c4 {
@@ -65,10 +68,10 @@ div.separator_c1e9c4 {
 div[aria-label="Modify Attachment"] {
     display: none;
 }
-div.filenameContainer_f847a3 {
+div.filenameContainer__41ea0 {
     display: none;
 }
-li.upload_df1eaf {
+li.upload_aa605f {
     min-height: auto;
     max-height: auto;
     min-width: auto;
@@ -87,12 +90,12 @@ div.friendsButtonContainer__35e86 .channel__972a0 {
 li div.containerDefault_c69b6d.wrapper__2ea32 {
     display: none;
 }
-.sectionDivider__629e4 {
-    display: none;
+div.sectionDivider__629e4 {
+    display: none !important;
 }
 
 /* remove the 12px padding between channels */
-div[style="height: 12px;"] {
+div[style="height: 12px;"], div[style="height: 8px;"] {
     display: none;
 }
 
@@ -111,10 +114,15 @@ div[style="height: 12px;"] {
 .group-spacing-16 .groupStart__5126c {
     --custom-group-spacing-start: auto;
 }
+.cozyMessage__5126c.wrapper_c19a55 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 
 /* fix the NEW thing on messages */
-.cozyMessage__5126c.beforeGroup__5126c {
-    min-height: auto;
+.group-spacing-16 .divider__5126c.hasContent__5126c {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 .group-spacing-16 .divider__5126c.beforeGroup__5126c {
     top: 0;
@@ -124,18 +132,15 @@ div[style="height: 12px;"] {
 
 /* no padding on the members menu */
 .membersGroup_c8ffbb {
-    padding: 0px;
-    padding-top: 8px;
-    padding-left: 5px;
-    height: auto;
+    padding: 0px !important;
+    padding-top: 8px !important;
+    padding-left: 5px !important;
+    height: auto !important;
 }
 
-/* hide the apps button on the chatbox & fix the padding on the jump to present part */
+/* hide the apps button on the chatbox*/
 div.channelAppLauncher_e6e74f {
-    display: none;
-}
-.jumpToPresentBar__0f481 {
-    right: 16px;
+    display: none !important;
 }
 
 /* hide the boosts thing */
@@ -171,19 +176,9 @@ div.hoverButtonGroup__06ab4 {
 div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
-/* fix the scroll problem in the channels thing TODO:fix */
-/*[aria-label=Channels] {
+/* fix the scroll problem in the channels thing */
+[aria-label=Channels] {
     height: auto !important;
-}
-*/
-/* no hallow een for you :3 */
-.wrapper_c1da7a {
-    display: none;
-}
-
-/* whyd they add that play again thing */
-.container__675e5 {
-    display: none;
 }
 
 /* no download thing */

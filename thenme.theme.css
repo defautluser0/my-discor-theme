@@ -90,7 +90,7 @@ div.friendsButtonContainer__35e86 .channel__972a0 {
 li div.containerDefault_c69b6d.wrapper__2ea32 {
     display: none;
 }
-div.sectionDivider__629e4 {
+div.sectionDivider__35e86 {
     display: none !important;
 }
 
@@ -183,5 +183,10 @@ div.listItem__650eb div.guildSeparator__252b6 {
 
 /* no download thing */
 .scroller_ef3116 > .listItem__650eb {
+    display: none;
+}
+
+/* remove the play again thing */
+.container__675e5 {
     display: none;
 }

@@ -190,3 +190,14 @@ div.listItem__650eb div.guildSeparator__252b6 {
 .container__675e5 {
     display: none;
 }
+
+/* move typing up */
+[class^="channelTextArea"] {
+    margin-bottom: 7px;
+}
+[class^="typing"] {
+    margin-bottom: 40px;
+}
+[class^="scrollerInner"] {
+    margin-bottom: 12px;
+} 

@@ -5,24 +5,21 @@
  * @version 1.0
  */
 
+
 /* this is what started this theme. hides the gifts button on the chatbox */
-button[aria-label="Send a gift"] {
+.buttons__74017>button {
     display: none;
 }
-/* hide gif picker button */
-button[aria-label="Open GIF picker"] {
-    display: none;
-}
-/* hide sticker button */
-button[aria-label="Open sticker picker"] {
+/* hide gif picker and sticker button */
+.buttons__74017 div:nth-child(3), .buttons__74017 div:nth-child(4) {
     display: none;
 }
 
 /* goodbye useless buttons on the top row */
-div[aria-label="Inbox"] {
+[class^=recentsIcon] {
     display: none !important;
 }
-div[aria-label="Help"] {
+[href="https://support.discord.com"] {
     display: none !important;
 }
 div.winButttons_c38106.winButtonsWithDivider_c38106::before {
@@ -37,6 +34,7 @@ div[aria-label="Start Video Call"] {
 div[aria-label="Hide Member List"] {
     display: none !important;
 }
+
 
 /* hide useless shit in the context menu */
 #channel-attach-listen {
@@ -65,7 +63,7 @@ div.separator_c1e9c4 {
 }
 
 /* hide useless shit in the attachments popup and make it more compact */
-div[aria-label="Modify Attachment"] {
+.wrapper_f7ecac div:nth-child(3) {
     display: none;
 }
 div.filenameContainer__41ea0 {
@@ -149,7 +147,7 @@ div.channelAppLauncher_e6e74f {
 }
 
 /* hide nitro tab on settings */
-[aria-label="Nitro"] {
+.premiumTab__581ea {
     display: none;
 }
 
@@ -177,7 +175,7 @@ div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
 /* fix the scroll problem in the channels thing */
-[aria-label=Channels] {
+.scroller__629e4 {
     height: auto !important;
 }
 

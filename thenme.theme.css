@@ -63,7 +63,7 @@ div.separator_c1e9c4 {
 }
 
 /* hide useless shit in the attachments popup and make it more compact */
-.wrapper_f7ecac div:nth-child(3) {
+[class="wrapper_f7ecac"] div:nth-child(3) {
     display: none;
 }
 div.filenameContainer__41ea0 {

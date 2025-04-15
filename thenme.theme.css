@@ -189,7 +189,7 @@ div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
 
-/* move typing up */
+/* move typing up VERY BROKEN SO COMMENTING OUT FOR NOW
 [class^="channelTextArea"] {
     margin-bottom: 7px;
 }
@@ -199,3 +199,4 @@ div.listItem__650eb div.guildSeparator__252b6 {
 [class^="scrollerInner"] {
     margin-bottom: 12px;
 } 
+*/

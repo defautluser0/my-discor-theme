@@ -25,7 +25,7 @@
 div.winButttons_c38106.winButtonsWithDivider_c38106::before {
     content: none !important;
 }
-div[aria-label="Show User Profile"] {
+div[aria-label^="Show User Profile"] {
     display: none !important;
 }
 div[aria-label="Start Video Call"] {

@@ -189,6 +189,10 @@ div.listItem__650eb div.guildSeparator__252b6 {
     display: none;
 }
 
+[class^="children__"] > [class^="iconItem"] {
+    display: none;
+}
+
 /* move typing up VERY BROKEN SO COMMENTING OUT FOR NOW
 [class^="channelTextArea"] {
     margin-bottom: 7px;

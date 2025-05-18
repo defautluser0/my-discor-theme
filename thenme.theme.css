@@ -205,7 +205,7 @@ div.listItem__650eb div.guildSeparator__252b6 {
 } 
 */
 
-/* move add server up --space-xs (6px) (ONLY WORKS WITH COMPACT MODE */
+/* move add server up --space-xs (6px) */
 .tutorialContainer__650eb {
     padding-bottom: var(--space-xs) !important;
 }

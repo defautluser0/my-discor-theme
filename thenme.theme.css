@@ -7,11 +7,11 @@
 
 
 /* this is what started this theme. hides the gifts button on the chatbox */
-.buttons__74017>button {
+.buttons__74017>div {
     display: none;
 }
 /* hide gif picker and sticker button */
-.buttons__74017 div:nth-child(3), .buttons__74017 div:nth-child(4) {
+.buttons__74017 div:nth-child(1), .buttons__74017 div:nth-child(2) {
     display: none;
 }
 

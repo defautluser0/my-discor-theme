@@ -11,7 +11,7 @@
     display: none;
 }
 /* hide gif picker and sticker button */
-.buttons__74017 div:nth-child(1), .buttons__74017 div:nth-child(2) {
+.buttons__74017 div:nth-child(2), .buttons__74017 div:nth-child(3) {
     display: none;
 }
 

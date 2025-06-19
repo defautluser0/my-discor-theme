@@ -6,12 +6,8 @@
  */
 
 
-/* this is what started this theme. hides the gifts button on the chatbox */
-.buttons__74017>div {
-    display: none;
-}
-/* hide gif picker and sticker button */
-.buttons__74017 div:nth-child(2), .buttons__74017 div:nth-child(3) {
+/* this is what started this theme. hides the gifts button on the chatbox (also the gif and sticker buttons) */
+[class^="inner__"] > [class^="buttons__"] > div:nth-of-type(-n+3) {
     display: none;
 }
 
@@ -192,18 +188,6 @@ div.listItem__650eb div.guildSeparator__252b6 {
 [class^="children__"] > [class^="iconItem"] {
     display: none;
 }
-
-/* move typing up VERY BROKEN SO COMMENTING OUT FOR NOW
-[class^="channelTextArea"] {
-    margin-bottom: 7px;
-}
-[class^="typing"] {
-    margin-bottom: 40px;
-}
-[class^="scrollerInner"] {
-    margin-bottom: 12px;
-} 
-*/
 
 /* move add server up --space-xs (6px) */
 .tutorialContainer__650eb {

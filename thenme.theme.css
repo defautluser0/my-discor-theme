@@ -7,7 +7,7 @@
 
 
 /* this is what started this theme. hides the gifts button on the chatbox (also the gif and sticker buttons) */
-[class^="inner__"] > [class^="buttons__"] > div:nth-of-type(-n+3) {
+[class^="inner__"] > [class^="buttons__"] > div:nth-of-type(-n+2), [class^="inner__"] > [class^="buttons__"] > button {
     display: none;
 }
 

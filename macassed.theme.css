@@ -1,0 +1,91 @@
+/*
+WARNING: only use this if you have vibrancy set to hud in the vencord settings of the desktop app
+i do not know what will happen if not but it isnt my fault
+*/
+
+/* make the app itself transparent and blurred */
+html, body, #app-mount, [class^="app_"] {
+    background: transparent !important;
+}
+
+/* this guy powers most of the backgrounds. begone */
+[class^="bg__"] {
+    background: transparent !important;
+}
+
+/* fix titlebar blur (top is blurred only up to sidebar) */
+[class^="bar_"] {
+    /* osx adds padding for no reason */
+    padding-left: 0px !important;
+    
+    /* empty div */
+    [class^="leading_"] {
+        width: var(--custom-guild-sidebar-width);
+        height: 32px;
+    }
+
+    /* title doesnt allow blur to be there if not */
+    [class^="title_"] {
+        background-color: var(--background-base-lowest) !important;
+        width: calc(100% - var(--custom-guild-sidebar-width));
+        left: unset;
+    }
+}
+
+/* outer sidebar container (guilds + channels) */
+div[class^="sidebar_"] {
+    background: transparent !important; /* whats a color */
+
+    /* i see you you little fuck */
+    &::after {
+        background: transparent !important;
+    }
+}
+
+/* guilds navbar inside sidebar */
+nav[class^="wrapper_"][class*="guilds_"],
+nav[class^="wrapper_"][class*="guilds_"] *:not(div[class^="folderGroup__"] *):not(div[class^="listItem__"] *) /* folders/guilds shouldnt be transparent since they break */ {
+    background: transparent !important;
+}
+
+/* channels list inside sidebar */
+div[class^="sidebarList_"][class*="sidebarListRounded_"],
+div[class^="sidebarList_"][class*="sidebarListRounded_"] *:not([class^="userAvatar__"] *):not([role="button"]):not([class^="containerDefault_"] *) /* exclude some stuff so it looks right */ {
+    background: transparent !important;
+
+    /* we can just let it go under, looks cleaner imo aswell */
+    [class^="scroller__"] {
+        margin-bottom: unset !important;
+    }
+    [class^="container__"] {
+        padding-bottom: unset !important;
+    }
+}
+
+/* settings sidebar */
+[data-layer="USER_SETTINGS"] {
+    background: transparent !important;
+    div[class^="standardSidebarView__"] {
+        background: transparent !important;
+    }
+    div[class^="sidebarRegion__"] * {
+        [class*="item_"][aria-selected="true"] {
+            background-color: var(--background-mod-strong) !important;
+        }
+        background: unset !important;
+    }
+}
+
+/* simulate the settings sidebar size change with the sidebar itself for better integration */
+#app-mount {
+    --custom-guild-sidebar-width: clamp(
+        272px,
+        calc(0.526 * (100vw - 1100px) + 272px),
+        475.333px
+    );
+}
+
+/* oh yeah we need to remove this now */
+[class^="sidebarResizeHandle_"] {
+    display: none !important;
+}

@@ -89,3 +89,146 @@ div[class^="sidebarList_"][class*="sidebarListRounded_"] *:not([class^="userAvat
 [class^="sidebarResizeHandle_"] {
     display: none !important;
 }
+
+/* switch toggle */
+[data-toggleable-component="switch"] {
+    position: relative;
+    width: 38px !important;
+    height: 23px !important;
+    border: 1px solid #6b6969 !important;
+    background-color: #494848;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.4s ease,
+    border 0.4s ease;
+
+    &[class*="checked__"] {
+        border: 1px solid #4983ea !important;
+        background-color: #1561d4 !important;
+        [class^="slider__"] {
+            left: 12px !important;
+        }
+    }
+
+    [class^="slider__"] {
+        position: absolute;
+        top: -3px;
+        left: -3px !important;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background-color: #d2d1d1 !important;
+        transition: left 0.4s ease;
+
+        /* Hide inner SVG */
+        > svg {
+            display: none !important;
+        }
+        > rect {
+            fill: #d2d1d1;
+        }
+    }
+}
+
+/* switch toggle but vencord edition */
+[class^="container__"]:has(> .vc-switch-slider) {
+    position: relative;
+    width: 38px !important;
+    height: 23px !important;
+    border: 1px solid #6b6969 !important;
+    background-color: #494848;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.4s ease,
+    border 0.4s ease;
+
+    &[class*="checked__"] {
+        border: 1px solid #4983ea !important;
+        background-color: #1561d4 !important;
+    }
+
+    [class^="slider__"] {
+        position: absolute;
+        top: -3px;
+        left: 0px;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background-color: #d2d1d1 !important;
+        transition: transform 0.4s ease;
+
+        /* Hide inner SVG */
+        > svg {
+            display: none;
+        }
+        > rect {
+            fill: #d2d1d1;
+        }
+    }
+}
+
+/* checking your boxes */
+[data-toggleable-component="checkbox"] {
+    &:active {
+        >div[class^="checkbox_"] {
+            background: #6b6b6b;
+        }
+        &[class*="checked_"] {
+            >div[class^="checkbox_"] {
+                background: #2472e8;
+            }
+        }
+    }
+    >div[class^="checkbox_"] {
+        border: none;
+        opacity: 0.74;
+        background: linear-gradient(#595758, #6b6b6b);
+        position: relative;
+        width: 20px !important;
+        height: 20px !important;
+    }
+    &[class*="checked_"] {
+        >div[class^="checkbox_"] {
+            border: none;
+            opacity: 0.9;
+            background: linear-gradient(#2472e8, #1453b2);
+        }
+    }
+}
+
+/* radio button */
+[class^="radioIndicatorGroup_"] {
+    >svg {
+        background: linear-gradient(#595758, #6b6b6b);
+        &[class*="Checked"] {
+            background: linear-gradient(#2472e8, #1453b2);
+        }
+        [class*="Fill"] {
+            fill: transparent
+        }
+        [class*="Stroke"] {
+            display: none;
+        }
+        :not([class*="Fill"]):not([class*="Stroke"]) {
+            fill: #dce8fa;
+            r: 5;
+        }
+    }
+}
+
+[role="slider"] {
+    [class^="bar_"] {
+        background-color: #494848;
+        [class^="barFill"] {
+            background-color: #1769e6;
+            border: none;
+        }
+    }
+    [class^="track_"] {
+        [class^="grabber"] {
+            background: #a2a1a1 !important;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

@@ -7,20 +7,18 @@
 
 
 /* this is what started this theme. hides the gifts button on the chatbox (also the gif and sticker buttons) */
-[class^="inner__"] > [class^="buttons__"] > div:nth-of-type(-n+3), [class^="inner__"] > [class^="buttons__"] > button {
+[class*="-inner"] > [class*="-buttons"] > div:nth-of-type(2), [class*="-inner"] > [class*="-buttons"] > div:nth-of-type(3), [class^="-inner"] > [class^="-buttons"] > button {
     display: none;
 }
 
 /* goodbye useless buttons on the top row */
-[class^=recentsIcon] {
+[class^="recentsIcon"] {
     display: none !important;
 }
 [href="https://support.discord.com"] {
     display: none !important;
 }
-div.winButttons_c38106.winButtonsWithDivider_c38106::before {
-    content: none !important;
-}
+/* TODO: make this actually work under different locales */
 div[aria-label^="Show User Profile"] {
     display: none !important;
 }
@@ -51,40 +49,30 @@ div[aria-label="Hide Member List"] {
 #user-context-mark-channel-read[aria-disabled="true"] {
     display: none;
 }
+#guild-context-mark-guild-read[aria-disabled="true"] {
+    display: none;
+}
+#channel-context-mark-channel-read[aria-disabled="true"] {
+    display: none;
+}
 #message-mark-unread {
     display: none;
 }
-div.separator_c1e9c4 {
+div[role="separator"] {
     display: none;
 }
 
-/* hide useless shit in the attachments popup and make it more compact */
-[class="wrapper_f7ecac"] div:nth-child(3) {
-    display: none;
-}
-div.filenameContainer__41ea0 {
-    display: none;
-}
-li.upload_aa605f {
-    min-height: auto;
-    max-height: auto;
-    min-width: auto;
-    max-width: auto;
-}
-
-/* hide nitro and shop but keep friends cuz its actually kinda useful */
-li.channel__972a0:not(.dm__972a0) {
-    display: none;
-}
-div.friendsButtonContainer__35e86 .channel__972a0 {
-    display: block;
+/* hide nitro and shop but keep friends and quests cuz theyre actually kinda useful */
+div[data-list-id*="private-channels-"] > ul > div:nth-of-type(2), 
+div[data-list-id*="private-channels-"] > ul > div:nth-of-type(3) {
+  display: none;
 }
 
 /* hide server guide and channels & roles */
-li div.containerDefault_c69b6d.wrapper__2ea32 {
+li div[class*="-containerDefault"][class*="-wrapper"] {
     display: none;
 }
-div.sectionDivider__35e86 {
+div[class*="-sectionDivider"] {
     display: none !important;
 }
 
@@ -94,102 +82,40 @@ div[style="height: 12px;"], div[style="height: 8px;"] {
 }
 
 /* no top padding on the channels menu */
-.wrapper__2ea32 {
+[class*="-wrapper"] {
     padding-top: 0px;
 }
 
 /* no padding between channels on the channels menu */
-.link__2ea32 {
-    padding: 3px;
-    padding-left: 6px;
-}
-
-/* no padding on the chat messages */
-.group-spacing-16 .groupStart__5126c {
-    --custom-group-spacing-start: auto;
-}
-.cozyMessage__5126c.wrapper_c19a55 {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-
-/* fix the NEW thing on messages */
-.group-spacing-16 .divider__5126c.hasContent__5126c {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-.group-spacing-16 .divider__5126c.beforeGroup__5126c {
-    top: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
+[class*="-link"] {
+  padding: 1px;
+  padding-inline: 3px;
 }
 
 /* no padding on the members menu */
-.membersGroup_c8ffbb {
+[class*="-membersGroup"] {
     padding: 0px !important;
     padding-top: 8px !important;
     padding-left: 5px !important;
     height: auto !important;
 }
 
-/* hide the apps button on the chatbox*/
-div.channelAppLauncher_e6e74f {
-    display: none !important;
-}
-
 /* hide the boosts thing */
-.container_eff079.containerWithMargin_eff079 {
-    display: none;
-}
-
-/* hide nitro tab on settings */
-.premiumTab__581ea {
-    display: none;
-}
-
-/* no quest */
-.mask_c721cc {
-    display: none;
-}
-
-/* activities my ass */
-.headerContainer__095fe[aria-hidden=true] {
-    display: none;
-}
-
-/* Remove Edit Image with Apps button from images (stole from aliucord server & fixed myself with recent classes update) */
-div.hoverButtonGroup__06ab4 {
+[class*="-container"][class*="-containerWithMargin"] {
     display: none;
 }
 
 /* remove the fucking discover thing */
-.footer__214dc {
-    display: none;
+[data-list-id="guildsnav"] > div > div > div[class*="-listItem"]:nth-last-child(2) {
+  display: none;
 }
+
 /* remove the fucking separator between sections in the guilds scroll thing */
-div.listItem__650eb div.guildSeparator__252b6 {
-    display: none;
-}
-/* fix the scroll problem in the channels thing */
-.scroller__629e4 {
-    height: auto !important;
-}
-
-/* no download thing */
-.scroller_ef3116 > .listItem__650eb {
-    display: none;
-}
-
-/* remove the play again thing */
-.container__675e5 {
-    display: none;
-}
-
-[class^="children__"] > [class^="iconItem"] {
+div[class*="-listItem"]:has(div[class*="-guildSeparator"]) {
     display: none;
 }
 
 /* move add server up --space-xs (6px) */
-.tutorialContainer__650eb {
+[class*="-tutorialContainer"] {
     padding-bottom: var(--space-xs) !important;
 }

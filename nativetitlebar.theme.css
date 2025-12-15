@@ -1,5 +1,5 @@
 /* remove custom titlebar */
-div.bar_c38106 {
+div[class*="-bar"] {
     display: none !important;
     min-height: none !important;
     padding-left: none !important;
@@ -10,6 +10,6 @@ div.bar_c38106 {
     --custom-app-top-bar-height: 0px;
 }
 /* add padding to the server buttons scroller thing */
-.tree_ef3116 .itemsContainer_ef3116 {
+[class*="-tree"] [class*="-itemsContainer"] {
     padding-top: 5px !important;
 }
